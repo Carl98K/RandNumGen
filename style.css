@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    font-family: "Heebo", sans-serif;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+#background-layer {
+    height: 400px;
+    width: 600px;
+    background-color: rgb(5, 97, 218);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+#password-layer {
+    height: 50px;
+    width: 450px;
+    background-color: rgb(221, 236, 255);
+    border-radius: 1%;
+}
+
+#password-layer p {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(51, 51, 51, 0.521);
+    margin-top: 8px;
+}
+
+form{
+    color: white;
+    margin-top: 10px;
+}
+
+#slider{
+    accent-color: rgb(255, 0, 191);
+    cursor: pointer;
+}
+
+#slider-number{
+    color: white;
+}
+
+.check-box{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#generate-button{
+    height: 45px;
+    width: 100px;
+    background-color: rgb(23, 255, 101);
+    color: rgb(2, 1, 2);
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
