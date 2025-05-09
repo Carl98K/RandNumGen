@@ -56,7 +56,7 @@ function generatePassword() {
             password += allowedChars[randomNum];
         }
 
-        passwordValue.style.color = "black";
+        passwordValue.style.color = "#5677fc";
         passwordValue.textContent = password;
     }
 }

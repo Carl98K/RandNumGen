@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <title>Password Generator</title>
 </head>
+
 <body>
-    
+
     <main>
         <h1>Password Generator</h1>
 
         <div id="background-layer">
-            <h2>Your Password is:</h1>
+            <h2>Your password is:</h1>
 
-            <div id="password-layer">
-                <p id="passwordValue">Try to Generate one...</p>
-            </div>
+                <div id="password-layer">
+                    <p id="passwordValue">Try to generate one...</p>
+                </div>
 
-            <form action="">
-                <label for="">Max Characters:</label>
-                <input id="slider" type="range" min="1" max="12" value="7">
-                <label id="slider-number">0</label>
-                <br>
-                <br>
-                <label for="">LowerCase:</label>
-                <input id="lowercase" class="check-box" type="checkbox">
-                <label for="">UpperCase:</label>
-                <input id="uppercase" class="check-box" type="checkbox">
-                <label for="">Numbers:</label>
-                <input id="numbers" class="check-box" type="checkbox">
-                <label for="">Symbols:</label>
-                <input id="symbols" class="check-box" type="checkbox">
-            </form>
+                <form action="">
+                    <label for="">Max characters:</label>
+                    <input id="slider" type="range" min="1" max="12" value="7">
+                    <label id="slider-number">0</label>
 
-            <button id="generate-button" onclick="generatePassword()">Generate</button>
+                    <div id="check-boxes">
+                        
+                        <div>
+                            <input id="lowercase" class="check-box" type="checkbox">
+                            <label for="">LowerCase</label>
+                        </div>
+
+                       
+                        <div>
+                            <input id="uppercase" class="check-box" type="checkbox">
+                            <label for="">UpperCase</label>
+                        </div>
+                       
+                       
+                        <div>
+                            <input id="numbers" class="check-box" type="checkbox">
+                            <label for="">Numbers</label>
+                        </div>
+                        
+                        <div>
+                            <input id="symbols" class="check-box" type="checkbox">
+                            <label for="">Symbols</label>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <button id="generate-button" onclick="generatePassword()">Generate</button>
         </div>
     </main>
 
     <script src="app.js"></script>
 </body>
+
 </html>
